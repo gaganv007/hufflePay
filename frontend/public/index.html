@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HufflePay - Cross-Currency Bitcoin Lightning & Taproot Payments</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/api.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="/" class="logo">
+                <div class="logo-icon">h</div>
+                <div class="logo-text">HufflePay</div>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="/">Home</a>
+                <a href="/reels">Reels</a>
+                <a href="/exchange">Exchange</a>
+                <a href="/dashboard">Dashboard</a>
+            </nav>
+            
+            <div class="auth-links">
+                <a href="#" class="btn btn-secondary">Login</a>
+                <a href="#" class="btn btn-primary">Register</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="sections-container">
+                <div class="section-col-8">
+                    <div class="card">
+                        <div class="card-header">
+                            Educational Reels
+                        </div>
+                        <div class="card-body">
+                            <h3 class="mb-3">What are Stablecoins & How They Work on Lightning</h3>
+                            <div class="video-container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Aqi4qxmFVJU?si=zx_R6wUOiRFo_3MB" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            
+                            <h3 class="mb-3 mt-4">Understanding Bitcoin Lightning Network in 5 Minutes</h3>
+                            <div class="video-container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/i_M0QG-ITpg?si=TWh0DecmIVxq5DZI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            
+                            <h3 class="mb-3 mt-4">How Taproot Assets Work for Stablecoins</h3>
+                            <div class="video-container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/i8jyb3YffD8?si=vbeehB1NOvRvAAX5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mt-4">
+                        <div class="card-header">
+                            <div class="post-input">
+                                Share your financial journey...
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="post-item">
+                                <div class="post-header">
+                                    <img src="https://via.placeholder.com/40" class="post-user-img" alt="Sarah">
+                                    <div class="post-user-name">Sarah Johnson</div>
+                                    <div class="post-time">2 hours ago</div>
+                                </div>
+                                <div class="post-content">
+                                    Just converted 500 USDT to EURC using HufflePay - so quick and easy! Love the low fees and how it all happens on Bitcoin's Lightning Network.
+                                </div>
+                                <div class="post-actions">
+                                    <div class="action-buttons">
+                                        <div>42 <i class="far fa-thumbs-up"></i></div>
+                                        <div>5 <i class="far fa-comment"></i></div>
+                                    </div>
+                                    <div class="share-button">
+                                        Share
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="post-item">
+                                <div class="post-header">
+                                    <img src="https://via.placeholder.com/40" class="post-user-img" alt="Alex">
+                                    <div class="post-user-name">Alex Chen</div>
+                                    <div class="post-time">5 hours ago</div>
+                                </div>
+                                <div class="post-content">
+                                    HufflePay saved me so much on international transfers this month. Swapped USDT to EURC in seconds, all on Bitcoin's Lightning Network. Highly recommend for students studying abroad!
+                                </div>
+                                <div class="post-actions">
+                                    <div class="action-buttons">
+                                        <div>28 <i class="far fa-thumbs-up"></i></div>
+                                        <div>3 <i class="far fa-comment"></i></div>
+                                    </div>
+                                    <div class="share-button">
+                                        Share
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="post-item">
+                                <div class="post-header">
+                                    <img src="https://via.placeholder.com/40" class="post-user-img" alt="Miguel">
+                                    <div class="post-user-name">Miguel Rodriguez</div>
+                                    <div class="post-time">Yesterday</div>
+                                </div>
+                                <div class="post-content">
+                                    Finally a service that lets me send money to my family in multiple stablecoins without crazy fees! Bitcoin Lightning Network with Taproot Assets is a game changer for cross-currency transfers.
+                                </div>
+                                <div class="post-actions">
+                                    <div class="action-buttons">
+                                        <div>56 <i class="far fa-thumbs-up"></i></div>
+                                        <div>8 <i class="far fa-comment"></i></div>
+                                    </div>
+                                    <div class="share-button">
+                                        Share
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-col-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Trending Stablecoins
+                        </div>
+                        <div class="card-body" id="trending-currencies">
+                            <!-- Stablecoin trends will be loaded here via JavaScript -->
+                            <div class="currency-item">
+                                <div class="currency-name">Bitcoin (BTC)</div>
+                                <div class="currency-change positive-change">+3.2%</div>
+                            </div>
+                            <div class="currency-item">
+                                <div class="currency-name">Euro Coin (EURC)</div>
+                                <div class="currency-change negative-change">-0.5%</div>
+                            </div>
+                            <div class="currency-item">
+                                <div class="currency-name">Japanese Yen Token (JPYT)</div>
+                                <div class="currency-change positive-change">+0.8%</div>
+                            </div>
+                            <div class="currency-item">
+                                <div class="currency-name">British Pound Token (GBPT)</div>
+                                <div class="currency-change positive-change">+0.3%</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="quick-exchange-card mt-4">
+                        <h3 class="exchange-title">Quick Exchange</h3>
+                        <p class="exchange-description">Send stablecoins instantly across different currencies with low fees, all on Bitcoin's Lightning Network.</p>
+                        <div class="form-group">
+                            <label for="quick-amount" class="form-label">Amount</label>
+                            <input type="number" id="quick-amount" class="form-control" placeholder="Enter amount" min="1">
+                        </div>
+                        <div class="form-group mb-4">
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="from-currency" class="form-label">From (Alice)</label>
+                                    <select id="from-currency" class="form-control">
+                                        <option value="USDT">USDT - Tether USD</option>
+                                        <option value="EURC">EURC - Euro Coin</option>
+                                        <option value="GBPT">GBPT - British Pound Token</option>
+                                        <option value="JPYT">JPYT - Japanese Yen Token</option>
+                                        <option value="BTC">BTC - Bitcoin</option>
+                                    </select>
+                                </div>
+                                <div class="col-6">
+                                    <label for="to-currency" class="form-label">To (Bob)</label>
+                                    <select id="to-currency" class="form-control">
+                                        <option value="EURC">EURC - Euro Coin</option>
+                                        <option value="USDT">USDT - Tether USD</option>
+                                        <option value="GBPT">GBPT - British Pound Token</option>
+                                        <option value="JPYT">JPYT - Japanese Yen Token</option>
+                                        <option value="BTC">BTC - Bitcoin</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="/exchange" class="btn btn-primary" style="width: 100%;">Start Exchange</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                &copy; 2025 HufflePay. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

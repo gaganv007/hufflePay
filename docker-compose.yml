@@ -1,0 +1,90 @@
+version: '3'
+services:
+  bitcoind:
+    image: ruimarinho/bitcoin-core:latest
+    command:
+      - -regtest=1
+      - -rpcuser=bitcoin
+      - -rpcpassword=bitcoin
+      - -rpcallowip=0.0.0.0/0
+      - -rpcbind=0.0.0.0
+      - -txindex=1
+      - -server=1
+      - -zmqpubrawblock=tcp://0.0.0.0:28332
+      - -zmqpubrawtx=tcp://0.0.0.0:28333
+    ports:
+      - "18443:18443" # RPC
+      - "18444:18444" # P2P
+      - "28332:28332" # ZMQ blocks
+      - "28333:28333" # ZMQ txns
+    volumes:
+      - ./bitcoin-data:/home/bitcoin/.bitcoin
+
+  lnd-alice:
+    image: lightninglabs/lnd:v0.17.0-beta
+    entrypoint: ["./lnd-entrypoint.sh"]
+    ports:
+      - "10009:10009" # gRPC
+      - "8080:8080"   # REST
+      - "9735:9735"   # p2p
+    volumes:
+      - ./lnd-alice:/root/.lnd
+      - ./lnd-entrypoint.sh:/lnd-entrypoint.sh
+    environment:
+      - NETWORK=regtest
+      - CHAIN=bitcoin
+      - BACKEND=bitcoind
+      - BITCOIND_HOST=bitcoind
+      - BITCOIND_RPCUSER=bitcoin
+      - BITCOIND_RPCPASS=bitcoin
+      - BITCOIN_NETWORK=regtest
+      - RPCUSER=lnd
+      - RPCPASS=lnd
+    depends_on:
+      - bitcoind
+
+  lnd-bob:
+    image: lightninglabs/lnd:v0.17.0-beta
+    entrypoint: ["./lnd-entrypoint.sh"]
+    ports:
+      - "10010:10009" # gRPC
+      - "8081:8080"   # REST
+      - "9736:9735"   # p2p
+    volumes:
+      - ./lnd-bob:/root/.lnd
+      - ./lnd-entrypoint.sh:/lnd-entrypoint.sh
+    environment:
+      - NETWORK=regtest
+      - CHAIN=bitcoin
+      - BACKEND=bitcoind
+      - BITCOIND_HOST=bitcoind
+      - BITCOIND_RPCUSER=bitcoin
+      - BITCOIND_RPCPASS=bitcoin
+      - BITCOIN_NETWORK=regtest
+      - RPCUSER=lnd
+      - RPCPASS=lnd
+    depends_on:
+      - bitcoind
+
+  lnd-edge:
+    image: lightninglabs/lnd:v0.17.0-beta
+    entrypoint: ["./lnd-entrypoint.sh"]
+    ports:
+      - "10011:10009" # gRPC
+      - "8082:8080"   # REST
+      - "9737:9735"   # p2p
+    volumes:
+      - ./lnd-edge:/root/.lnd
+      - ./lnd-entrypoint.sh:/lnd-entrypoint.sh
+    environment:
+      - NETWORK=regtest
+      - CHAIN=bitcoin
+      - BACKEND=bitcoind
+      - BITCOIND_HOST=bitcoind
+      - BITCOIND_RPCUSER=bitcoin
+      - BITCOIND_RPCPASS=bitcoin
+      - BITCOIN_NETWORK=regtest
+      - RPCUSER=lnd
+      - RPCPASS=lnd
+    depends_on:
+      - bitcoind

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightning-FX Stablecoin Exchange - HufflePay</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/exchange.css">
+    <script src="js/api.js" defer></script>
+    <script src="js/exchange.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="/" class="logo">
+                <div class="logo-icon">h</div>
+                <div class="logo-text">HufflePay</div>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="/">Home</a>
+                <a href="/reels">Reels</a>
+                <a href="/exchange">Exchange</a>
+                <a href="/dashboard">Dashboard</a>
+            </nav>
+            
+            <div class="auth-links">
+                <a href="#" class="btn btn-secondary">Login</a>
+                <a href="#" class="btn btn-primary">Register</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="exchange-container">
+            <h1 class="exchange-title">Lightning-FX Stablecoin Exchange</h1>
+            
+            <div class="progress-stepper">
+                <div class="progress-track">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                
+                <div class="step-item active" id="step-item-1">
+                    <div class="step-circle"></div>
+                    <div class="step-title">Amount</div>
+                </div>
+                
+                <div class="step-item" id="step-item-2">
+                    <div class="step-circle"></div>
+                    <div class="step-title">Currency</div>
+                </div>
+                
+                <div class="step-item" id="step-item-3">
+                    <div class="step-circle"></div>
+                    <div class="step-title">Recipient</div>
+                </div>
+                
+                <div class="step-item" id="step-item-4">
+                    <div class="step-circle"></div>
+                    <div class="step-title">Confirm</div>
+                </div>
+                
+                <div class="step-item" id="step-item-5">
+                    <div class="step-circle"></div>
+                    <div class="step-title">Review</div>
+                </div>
+                
+                <div class="step-item" id="step-item-6">
+                    <div class="step-circle"></div>
+                    <div class="step-title">Complete</div>
+                </div>
+            </div>
+            
+            <!-- Multi-step exchange form - only one step will be visible at a time -->
+            <div class="exchange-form-container">
+                <!-- Step 1: Amount -->
+                <div class="exchange-step" id="exchange-step-1">
+                    <h2 class="step-heading">How much would you like to send from Alice?</h2>
+                    <div class="form-group">
+                        <input type="number" class="form-control" id="exchange-amount" placeholder="Enter amount" min="1">
+                    </div>
+                    <div class="action-buttons">
+                        <div></div> <!-- Empty div for flex spacing -->
+                        <button class="btn btn-primary" id="step-1-next">Next</button>
+                    </div>
+                </div>
+                
+                <!-- Step 2: Currency -->
+                <div class="exchange-step" id="exchange-step-2" style="display: none;">
+                    <h2 class="step-heading">What stablecoin does Alice wish to send?</h2>
+                    <div class="form-group">
+                        <select id="source-currency" class="form-control">
+                            <option value="USDT">USDT - Tether USD</option>
+                            <option value="EURC">EURC - Euro Coin</option>
+                            <option value="GBPT">GBPT - British Pound Token</option>
+                            <option value="JPYT">JPYT - Japanese Yen Token</option>
+                            <option value="BTC">BTC - Bitcoin</option>
+                        </select>
+                    </div>
+                    <h2 class="step-heading mt-4">What stablecoin should Bob receive?</h2>
+                    <div class="form-group">
+                        <select id="target-currency" class="form-control">
+                            <option value="EURC">EURC - Euro Coin</option>
+                            <option value="USDT">USDT - Tether USD</option>
+                            <option value="GBPT">GBPT - British Pound Token</option>
+                            <option value="JPYT">JPYT - Japanese Yen Token</option>
+                            <option value="BTC">BTC - Bitcoin</option>
+                        </select>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="btn btn-secondary" id="step-2-back">Back</button>
+                        <button class="btn btn-primary" id="step-2-next">Next</button>
+                    </div>
+                </div>
+                
+                <!-- Step 3: Recipient -->
+                <div class="exchange-step" id="exchange-step-3" style="display: none;">
+                    <h2 class="step-heading">Enter Bob's username</h2>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="receiver-username" placeholder="Bob's username" value="Bob" minlength="3" maxlength="16">
+                        <div class="character-count">3-16 characters</div>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="btn btn-secondary" id="step-3-back">Back</button>
+                        <button class="btn btn-primary" id="step-3-next">Next</button>
+                    </div>
+                </div>
+                
+                <!-- Step 4: Confirm Recipient -->
+                <div class="exchange-step" id="exchange-step-4" style="display: none;">
+                    <h2 class="step-heading">Confirm Bob's username</h2>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="confirm-username" readonly>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="btn btn-secondary" id="step-4-back">Back</button>
+                        <button class="btn btn-primary" id="step-4-next">Next</button>
+                    </div>
+                </div>
+                
+                <!-- Step 5: Review Transaction -->
+                <div class="exchange-step" id="exchange-step-5" style="display: none;">
+                    <h2 class="step-heading">Are you sure you want to proceed with the Lightning-FX swap?</h2>
+                    <div class="transaction-summary">
+                        <div class="summary-row">
+                            <div class="summary-label">From (Alice):</div>
+                            <div class="summary-value" id="summary-amount"></div>
+                        </div>
+                        <div class="summary-row">
+                            <div class="summary-label">To (Bob):</div>
+                            <div class="summary-value" id="summary-receiver"></div>
+                        </div>
+                        <div class="summary-row">
+                            <div class="summary-label">Conversion rate:</div>
+                            <div class="summary-value" id="summary-rate">1 USDT = 0.91 EURC</div>
+                        </div>
+                        <div class="summary-row">
+                            <div class="summary-label">Bob receives:</div>
+                            <div class="summary-value" id="summary-converted"></div>
+                        </div>
+                        <div class="summary-row">
+                            <div class="summary-label">Fee:</div>
+                            <div class="summary-value" id="summary-fee">0.5%</div>
+                        </div>
+                        <div class="summary-row">
+                            <div class="summary-label">Network:</div>
+                            <div class="summary-value">Bitcoin Lightning with Taproot Assets</div>
+                        </div>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="btn btn-secondary" id="step-5-back">No</button>
+                        <button class="btn btn-primary" id="step-5-next">Yes</button>
+                    </div>
+                </div>
+                
+                <!-- Step 6: Submit Transaction -->
+                <div class="exchange-step" id="exchange-step-6" style="display: none;">
+                    <h2 class="step-heading">Submit Lightning-FX Transaction</h2>
+                    <p class="form-description">Please review your transaction one more time before submitting.</p>
+                    <div class="transaction-summary">
+                        <div class="summary-row">
+                            <div class="summary-label">From (Alice):</div>
+                            <div class="summary-value" id="final-amount"></div>
+                        </div>
+                        <div class="summary-row">
+                            <div class="summary-label">To (Bob):</div>
+                            <div class="summary-value" id="final-receiver"></div>
+                        </div>
+                        <div class="summary-row">
+                            <div class="summary-label">Conversion rate:</div>
+                            <div class="summary-value" id="final-rate">1 USDT = 0.91 EURC</div>
+                        </div>
+                        <div class="summary-row">
+                            <div class="summary-label">Bob receives:</div>
+                            <div class="summary-value" id="final-converted"></div>
+                        </div>
+                        <div class="summary-row">
+                            <div class="summary-label">Fee:</div>
+                            <div class="summary-value" id="final-fee">0.5%</div>
+                        </div>
+                        <div class="summary-row">
+                            <div class="summary-label">Total:</div>
+                            <div class="summary-value" id="final-total"></div>
+                        </div>
+                    </div>
+                    <div id="processing-message" style="display: none;">
+                        <p class="text-center mb-3">Processing your Lightning-FX swap... <i class="fa fa-spinner fa-spin"></i></p>
+                        <p class="text-center">Executing cross-currency transfer on Bitcoin Lightning Network with Taproot Assets</p>
+                    </div>
+                    <div class="action-buttons" id="final-actions">
+                        <button class="btn btn-secondary" id="step-6-back">Cancel</button>
+                        <button class="btn btn-primary" id="step-6-submit">Submit</button>
+                    </div>
+                </div>
+                
+                <!-- Transaction Complete -->
+                <div class="exchange-step" id="exchange-step-complete" style="display: none;">
+                    <div class="confirmation-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <h2 class="confirmation-heading">Lightning-FX transaction complete!</h2>
+                    <p class="confirmation-message">The cross-currency swap has been successfully processed on Bitcoin's Lightning Network.</p>
+                    
+                    <div class="transaction-summary">
+                        <div class="summary-row">
+                            <div class="summary-label">Transaction ID:</div>
+                            <div class="summary-value transaction-id" id="transaction-id">HP-C3XH84JSC</div>
+                        </div>
+                        <div class="summary-row">
+                            <div class="summary-label">Sender (Alice):</div>
+                            <div class="summary-value" id="complete-sender-amount">100 USDT</div>
+                        </div>
+                        <div class="summary-row">
+                            <div class="summary-label">Recipient (Bob):</div>
+                            <div class="summary-value" id="complete-recipient">Bob</div>
+                        </div>
+                        <div class="summary-row">
+                            <div class="summary-label">Bob received:</div>
+                            <div class="summary-value" id="complete-receiver-amount">90.55 EURC</div>
+                        </div>
+                        <div class="summary-row">
+                            <div class="summary-label">Date:</div>
+                            <div class="summary-value" id="transaction-date">05/04/2025</div>
+                        </div>
+                    </div>
+                    
+                    <div class="action-center">
+                        <a href="/" class="btn btn-primary">Return to Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                &copy; 2025 HufflePay. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

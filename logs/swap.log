@@ -1,0 +1,64 @@
+2025-04-06T08:12:49.450Z info: Initiating swap: 100 USD -> EUR
+2025-04-06T08:12:49.451Z info: Exchange details: {"originalAmount":100,"convertedAmount":91,"feeAmount":0.455,"finalAmount":90.545,"rate":0.91,"feePercentage":0.5}
+2025-04-06T08:12:49.452Z info: Swap initiated with ID: swap_1743927169451_3cfbdfab
+2025-04-06T08:12:49.454Z info: Executing swap swap_1743927169451_3cfbdfab: 100 USD -> 90.545 EUR
+2025-04-06T08:12:49.454Z info: Transferring assets for swap swap_1743927169451_3cfbdfab
+2025-04-06T08:12:49.454Z error: Error executing swap swap_1743927169451_3cfbdfab: Asset asset_usd_default not found in alice node
+2025-04-06T08:16:46.908Z info: Initiating swap: 100 USD -> EUR
+2025-04-06T08:16:46.908Z info: Exchange details: {"originalAmount":100,"convertedAmount":91,"feeAmount":0.455,"finalAmount":90.545,"rate":0.91,"feePercentage":0.5}
+2025-04-06T08:16:46.908Z info: Swap initiated with ID: swap_1743927406908_b853b49d
+2025-04-06T08:16:46.913Z info: Executing swap swap_1743927406908_b853b49d: 100 USD -> 90.545 EUR
+2025-04-06T08:16:46.913Z info: Transferring assets for swap swap_1743927406908_b853b49d
+2025-04-06T08:16:46.913Z error: Error executing swap swap_1743927406908_b853b49d: Asset asset_usd_default not found in alice node
+2025-04-06T08:18:07.854Z info: Initiating swap: 100 USD -> EUR
+2025-04-06T08:18:07.854Z info: Exchange details: {"originalAmount":100,"convertedAmount":91,"feeAmount":0.455,"finalAmount":90.545,"rate":0.91,"feePercentage":0.5}
+2025-04-06T08:18:07.854Z info: Swap initiated with ID: swap_1743927487854_871210f8
+2025-04-06T08:18:07.856Z info: Executing swap swap_1743927487854_871210f8: 100 USD -> 90.545 EUR
+2025-04-06T08:18:07.856Z info: Transferring assets for swap swap_1743927487854_871210f8
+2025-04-06T08:18:07.856Z error: Error executing swap swap_1743927487854_871210f8: Asset asset_usd_default not found in alice node
+2025-04-06T08:53:48.621Z info: Initiating swap: 100 USD -> EUR
+2025-04-06T08:53:48.623Z info: Exchange details: {"originalAmount":100,"convertedAmount":91,"feeAmount":0.455,"finalAmount":90.545,"rate":0.91,"feePercentage":0.5}
+2025-04-06T08:53:48.624Z info: Swap initiated with ID: swap_1743929628623_c2703892
+2025-04-06T08:53:48.641Z info: Executing swap swap_1743929628623_c2703892: 100 USD -> 90.545 EUR
+2025-04-06T08:53:48.641Z info: Transferring assets for swap swap_1743929628623_c2703892
+2025-04-06T08:53:48.641Z error: Error executing swap swap_1743929628623_c2703892: Asset asset_usd_default not found in alice node
+2025-04-06T09:10:56.495Z info: Initiating swap: 11 USDT -> EURC
+2025-04-06T09:10:56.497Z error: Failed to initiate swap: Exchange rate not found for USDT-EURC
+2025-04-06T09:14:54.461Z info: Initiating swap: 10 USDT -> EURC
+2025-04-06T09:14:54.462Z info: Exchange details: {"originalAmount":10,"convertedAmount":9.1,"feeAmount":0.00091,"finalAmount":9.09909,"rate":0.91,"feePercentage":0.01}
+2025-04-06T09:14:54.462Z error: Failed to initiate swap: Source asset USDT not found
+2025-04-06T09:32:09.532Z info: Initiating swap: 100 USDT -> EURC
+2025-04-06T09:32:09.533Z info: Exchange details: {"originalAmount":100,"convertedAmount":91,"feeAmount":0.0091,"finalAmount":90.9909,"rate":0.91,"feePercentage":0.01}
+2025-04-06T09:32:09.533Z error: Failed to initiate swap: Source asset USDT not found
+2025-04-06T09:36:31.838Z info: Initiating swap: 1 USDT -> EURC
+2025-04-06T09:36:31.839Z info: Exchange details: {"originalAmount":1,"convertedAmount":0.91,"feeAmount":0.000091,"finalAmount":0.9099090000000001,"rate":0.91,"feePercentage":0.01}
+2025-04-06T09:36:31.839Z error: Failed to initiate swap: Source asset USDT not found
+2025-04-06T09:41:30.371Z info: Initiating swap: 100 USDT -> EURC
+2025-04-06T09:41:30.371Z info: Using backend currencies: USD -> EUR
+2025-04-06T09:41:30.371Z info: Exchange details: {"originalAmount":100,"convertedAmount":91,"feeAmount":0.455,"finalAmount":90.545,"rate":0.91,"feePercentage":0.5}
+2025-04-06T09:41:30.372Z info: Swap initiated with ID: swap_1743932490372_29efce49
+2025-04-06T09:41:30.379Z info: Executing swap swap_1743932490372_29efce49: 100 USDT -> 90.545 EURC
+2025-04-06T09:41:30.379Z info: Transferring assets for swap swap_1743932490372_29efce49
+2025-04-06T09:41:30.379Z error: Error executing swap swap_1743932490372_29efce49: Asset asset_usd_default not found in alice node
+2025-04-06T09:46:05.029Z info: Initiating swap: 100 USDT -> EURC
+2025-04-06T09:46:05.029Z info: Using backend currencies: USD -> EUR
+2025-04-06T09:46:05.029Z info: Exchange details: {"originalAmount":100,"convertedAmount":91,"feeAmount":0.455,"finalAmount":90.545,"rate":0.91,"feePercentage":0.5}
+2025-04-06T09:46:05.030Z info: Swap initiated with ID: swap_1743932765030_accc74ab
+2025-04-06T09:46:05.036Z info: Executing swap swap_1743932765030_accc74ab: 100 USDT -> 90.545 EURC
+2025-04-06T09:46:05.036Z info: Transferring assets for swap swap_1743932765030_accc74ab
+2025-04-06T09:46:05.036Z info: Transferring 100 USDT from Alice to Edge
+2025-04-06T09:46:05.037Z info: Transferring 90.545 EURC from Edge to Bob
+2025-04-06T09:46:05.037Z info: Paying target invoice for Bob (90.545 EURC)
+2025-04-06T09:46:05.037Z info: Payment to Bob successful, settling hold invoice from Alice
+2025-04-06T09:46:05.037Z info: Swap swap_1743932765030_accc74ab completed successfully
+2025-04-06T09:53:54.858Z info: Initiating swap: 100 USDT -> EURC
+2025-04-06T09:53:54.858Z info: Using backend currencies: USD -> EUR
+2025-04-06T09:53:54.858Z info: Exchange details: {"originalAmount":100,"convertedAmount":91,"feeAmount":0.455,"finalAmount":90.545,"rate":0.91,"feePercentage":0.5}
+2025-04-06T09:53:54.860Z info: Swap initiated with ID: swap_1743933234860_138d53f8
+2025-04-06T09:53:54.866Z info: Executing swap swap_1743933234860_138d53f8: 100 USDT -> 90.545 EURC
+2025-04-06T09:53:54.866Z info: Transferring assets for swap swap_1743933234860_138d53f8
+2025-04-06T09:53:54.866Z info: Transferring 100 USDT from Alice to Edge
+2025-04-06T09:53:54.867Z info: Transferring 90.545 EURC from Edge to Bob
+2025-04-06T09:53:54.868Z info: Paying target invoice for Bob (90.545 EURC)
+2025-04-06T09:53:54.868Z info: Payment to Bob successful, settling hold invoice from Alice
+2025-04-06T09:53:54.868Z info: Swap swap_1743933234860_138d53f8 completed successfully

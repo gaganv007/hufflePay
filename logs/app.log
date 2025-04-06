@@ -1,0 +1,98 @@
+2025-04-06T08:12:19.120Z info: Services initialized successfully
+2025-04-06T08:12:19.122Z info: HufflePay server running on port 3000
+2025-04-06T08:12:49.429Z info: GET /api/lightning/info
+2025-04-06T08:12:49.437Z info: GET /api/taproot/assets?nodeType=edge
+2025-04-06T08:12:49.445Z info: POST /api/taproot/mint
+2025-04-06T08:12:49.448Z info: POST /api/taproot/mint
+2025-04-06T08:12:49.450Z info: POST /api/swaps
+2025-04-06T08:12:49.453Z info: POST /api/swaps/swap_1743927169451_3cfbdfab/execute
+2025-04-06T08:16:24.556Z info: POST /api/taproot/mint
+2025-04-06T08:16:33.671Z info: POST /api/taproot/mint
+2025-04-06T08:16:46.896Z info: GET /api/lightning/info
+2025-04-06T08:16:46.900Z info: GET /api/taproot/assets?nodeType=edge
+2025-04-06T08:16:46.903Z info: POST /api/taproot/mint
+2025-04-06T08:16:46.904Z info: POST /api/taproot/mint
+2025-04-06T08:16:46.908Z info: POST /api/swaps
+2025-04-06T08:16:46.913Z info: POST /api/swaps/swap_1743927406908_b853b49d/execute
+2025-04-06T08:18:07.837Z info: GET /api/lightning/info
+2025-04-06T08:18:07.842Z info: GET /api/taproot/assets?nodeType=edge
+2025-04-06T08:18:07.844Z info: GET /api/taproot/assets?nodeType=alice
+2025-04-06T08:18:07.845Z info: GET /api/taproot/assets?nodeType=bob
+2025-04-06T08:18:07.847Z info: POST /api/taproot/mint
+2025-04-06T08:18:07.849Z info: POST /api/taproot/mint
+2025-04-06T08:18:07.850Z info: POST /api/taproot/mint
+2025-04-06T08:18:07.852Z info: POST /api/taproot/mint
+2025-04-06T08:18:07.854Z info: POST /api/swaps
+2025-04-06T08:18:07.856Z info: POST /api/swaps/swap_1743927487854_871210f8/execute
+2025-04-06T08:42:40.069Z info: Services initialized successfully
+2025-04-06T08:42:40.071Z info: HufflePay server running on port 3000
+2025-04-06T08:52:42.640Z info: Services initialized successfully
+2025-04-06T08:52:42.643Z info: HufflePay server running on port 3000
+2025-04-06T08:53:48.621Z info: POST /api/swaps
+2025-04-06T08:53:48.639Z info: POST /api/swaps/swap_1743929628623_c2703892/execute
+2025-04-06T09:09:57.551Z info: Services initialized successfully
+2025-04-06T09:09:57.554Z info: HufflePay server running on port 3000
+2025-04-06T09:10:56.495Z info: POST /api/swaps
+2025-04-06T09:14:07.228Z info: Services initialized successfully
+2025-04-06T09:14:07.231Z info: HufflePay server running on port 3000
+2025-04-06T09:14:54.460Z info: POST /api/swaps
+2025-04-06T09:19:54.719Z info: Services initialized successfully
+2025-04-06T09:19:54.723Z info: HufflePay server running on port 3000
+2025-04-06T09:20:27.937Z info: Services initialized successfully
+2025-04-06T09:20:27.940Z info: HufflePay server running on port 3000
+2025-04-06T09:21:57.561Z info: Services initialized successfully
+2025-04-06T09:21:57.562Z info: HufflePay server running on port 3000
+2025-04-06T09:25:03.101Z info: Services initialized successfully
+2025-04-06T09:25:03.103Z info: HufflePay server running on port 3000
+2025-04-06T09:25:38.042Z info: Services initialized successfully
+2025-04-06T09:25:38.044Z info: HufflePay server running on port 3000
+2025-04-06T09:27:00.424Z info: Services initialized successfully
+2025-04-06T09:27:00.426Z info: HufflePay server running on port 3000
+2025-04-06T09:29:26.462Z info: Services initialized successfully
+2025-04-06T09:29:26.464Z info: HufflePay server running on port 3000
+2025-04-06T09:31:25.532Z info: Services initialized successfully
+2025-04-06T09:31:25.532Z info: Initializing assets...
+2025-04-06T09:31:25.538Z info: Assets initialized successfully
+2025-04-06T09:31:25.539Z info: HufflePay server running on port 3000
+2025-04-06T09:32:09.532Z info: POST /api/swaps
+2025-04-06T09:33:25.490Z info: Services initialized successfully
+2025-04-06T09:33:25.491Z info: Initializing assets...
+2025-04-06T09:33:25.496Z info: Assets initialized successfully
+2025-04-06T09:33:25.497Z info: HufflePay server running on port 3000
+2025-04-06T09:34:05.174Z info: GET /api/taproot/assets?nodeType=alice
+2025-04-06T09:34:13.787Z info: GET /api/taproot/assets?nodeType=bob
+2025-04-06T09:34:20.256Z info: GET /api/taproot/assets?nodeType=edge
+2025-04-06T09:35:09.182Z info: POST /api/taproot/mint
+2025-04-06T09:35:18.558Z info: POST /api/taproot/mint
+2025-04-06T09:35:27.208Z info: POST /api/taproot/mint
+2025-04-06T09:35:36.635Z info: POST /api/taproot/mint
+2025-04-06T09:35:44.244Z info: GET /api/taproot/assets?nodeType=alice
+2025-04-06T09:35:56.861Z info: Services initialized successfully
+2025-04-06T09:35:56.861Z info: Initializing assets...
+2025-04-06T09:35:56.867Z info: Assets initialized successfully
+2025-04-06T09:35:56.868Z info: HufflePay server running on port 3000
+2025-04-06T09:36:31.838Z info: POST /api/swaps
+2025-04-06T09:40:41.222Z info: Services initialized successfully
+2025-04-06T09:40:41.222Z info: Initializing assets...
+2025-04-06T09:40:41.226Z info: Assets initialized successfully
+2025-04-06T09:40:41.227Z info: HufflePay server running on port 3000
+2025-04-06T09:41:30.370Z info: POST /api/swaps
+2025-04-06T09:41:30.378Z info: POST /api/swaps/swap_1743932490372_29efce49/execute
+2025-04-06T09:45:21.220Z info: Services initialized successfully
+2025-04-06T09:45:21.221Z info: Initializing assets...
+2025-04-06T09:45:21.224Z info: Assets initialized successfully
+2025-04-06T09:45:21.226Z info: HufflePay server running on port 3000
+2025-04-06T09:45:26.575Z info: POST /api/taproot/mint
+2025-04-06T09:45:35.485Z info: POST /api/taproot/mint
+2025-04-06T09:46:05.028Z info: POST /api/swaps
+2025-04-06T09:46:05.036Z info: POST /api/swaps/swap_1743932765030_accc74ab/execute
+2025-04-06T09:46:05.040Z info: GET /api/swaps/swap_1743932765030_accc74ab
+2025-04-06T09:47:01.900Z info: GET /api/admin/stats
+2025-04-06T09:47:01.979Z info: GET /api/admin/assets
+2025-04-06T09:47:01.997Z info: GET /api/admin/swaps
+2025-04-06T09:53:54.857Z info: POST /api/swaps
+2025-04-06T09:53:54.865Z info: POST /api/swaps/swap_1743933234860_138d53f8/execute
+2025-04-06T09:53:54.872Z info: GET /api/swaps/swap_1743933234860_138d53f8
+2025-04-06T09:54:05.047Z info: GET /api/admin/stats
+2025-04-06T09:54:05.355Z info: GET /api/admin/assets
+2025-04-06T09:54:05.363Z info: GET /api/admin/swaps

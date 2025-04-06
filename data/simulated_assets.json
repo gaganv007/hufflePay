@@ -1,0 +1,50 @@
+{
+  "alice": {
+    "asset_usd_1743932726575": {
+      "id": "asset_usd_1743932726575",
+      "name": "USD",
+      "amount": 9800,
+      "created_at": "2025-04-06T09:45:26.575Z"
+    }
+  },
+  "bob": {
+    "asset_eur_1743932735485": {
+      "id": "asset_eur_1743932735485",
+      "name": "EUR",
+      "amount": 10000,
+      "created_at": "2025-04-06T09:45:35.485Z"
+    },
+    "asset_eur_default": {
+      "id": "asset_eur_default",
+      "name": "EUR",
+      "amount": 181.09,
+      "created_at": "2025-04-06T09:46:05.037Z"
+    }
+  },
+  "edge": {
+    "asset_usd_default": {
+      "id": "asset_usd_default",
+      "name": "USD",
+      "amount": 10000,
+      "created_at": "2025-04-06T09:45:21.223Z"
+    },
+    "asset_eur_default": {
+      "id": "asset_eur_default",
+      "name": "EUR",
+      "amount": 8818.91,
+      "created_at": "2025-04-06T09:45:21.223Z"
+    },
+    "asset_btc_default": {
+      "id": "asset_btc_default",
+      "name": "BTC",
+      "amount": 1,
+      "created_at": "2025-04-06T09:45:21.223Z"
+    },
+    "asset_usd_1743932726575": {
+      "id": "asset_usd_1743932726575",
+      "name": "USD",
+      "amount": 200,
+      "created_at": "2025-04-06T09:46:05.036Z"
+    }
+  }
+}

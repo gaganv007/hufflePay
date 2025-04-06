@@ -1,0 +1,78 @@
+2025-04-06 07:55:38.864 [INF] LTND: Version: 0.17.0-beta commit=v0.17.0-beta, build=production, logging=default, debuglevel=info
+2025-04-06 07:55:38.864 [INF] LTND: Active chain: Bitcoin (network=regtest)
+2025-04-06 07:55:38.866 [INF] RPCS: Generating TLS certificates...
+2025-04-06 07:55:38.870 [INF] RPCS: Done generating TLS certificates
+2025-04-06 07:55:38.881 [INF] RPCS: RPC server listening on 0.0.0.0:10009
+2025-04-06 07:55:38.883 [INF] RPCS: gRPC proxy started at 0.0.0.0:8080
+2025-04-06 07:55:38.898 [INF] LTND: Opening the main database, this might take a few minutes...
+2025-04-06 07:55:38.899 [INF] LTND: Opening bbolt database, sync_freelist=false, auto_compact=false
+2025-04-06 07:55:38.910 [INF] LTND: Creating local graph and channel state DB instances
+2025-04-06 07:55:38.916 [INF] CHDB: Checking for schema update: latest_version=31, db_version=31
+2025-04-06 07:55:38.916 [INF] CHDB: Checking for optional update: prune_revocation_log=false, db_version=empty
+2025-04-06 07:55:38.917 [INF] LTND: Database(s) now open (time_to_open=17.575ms)!
+2025-04-06 07:55:38.918 [INF] LTND: We're not running within systemd or the service type is not 'notify'
+2025-04-06 07:55:38.918 [INF] LTND: Waiting for wallet encryption password. Use `lncli create` to create a wallet, `lncli unlock` to unlock an existing wallet, or `lncli changepassword` to change the password of an existing wallet and unlock it.
+2025-04-06 08:00:15.221 [INF] LNWL: Opened wallet
+2025-04-06 08:00:15.256 [INF] CHRE: Primary chain is set to: bitcoin
+2025-04-06 08:00:15.275 [INF] LNWL: Started listening for bitcoind block notifications via ZMQ on 172.19.0.2:28332
+2025-04-06 08:00:15.275 [INF] LNWL: Started polling mempool to cache new transactions
+2025-04-06 08:00:15.275 [INF] LNWL: Started listening for bitcoind transaction notifications via ZMQ on 172.19.0.2:28333
+2025-04-06 08:00:15.696 [INF] LNWL: The wallet has been unlocked without a time limit
+2025-04-06 08:00:15.727 [INF] CHRE: LightningWallet opened
+2025-04-06 08:00:15.731 [INF] HSWC: Cleaning circuits from disk for closed channels
+2025-04-06 08:00:15.731 [INF] HSWC: Finished cleaning: no closed channels found, no actions taken.
+2025-04-06 08:00:15.731 [INF] HSWC: Restoring in-memory circuit state from disk
+2025-04-06 08:00:15.731 [INF] HSWC: Payment circuits loaded: num_pending=0, num_open=0
+2025-04-06 08:00:15.734 [INF] SWPR: Migrating UTXO nursery finalized TXIDs
+2025-04-06 08:00:15.735 [INF] LTND: Channel backup proxy channel notifier starting
+2025-04-06 08:00:15.735 [INF] ATPL: Instantiating autopilot with active=false, max_channels=5, allocation=0.600000, min_chan_size=20000, max_chan_size=16777215, private=false, min_confs=1, conf_target=3
+2025-04-06 08:00:15.735 [INF] LNWL: Started rescan from block 0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206 (height 0) for 0 addresses
+2025-04-06 08:00:15.735 [INF] SGNR: Making macaroons for Signer RPC Server at: /root/.lnd/data/chain/bitcoin/regtest/signer.macaroon
+2025-04-06 08:00:15.736 [INF] WLKT: Baking macaroons for WalletKit RPC Server at: /root/.lnd/data/chain/bitcoin/regtest/walletkit.macaroon
+2025-04-06 08:00:15.737 [INF] LNWL: Catching up block hashes to height 0, this might take a while
+2025-04-06 08:00:15.737 [INF] LNWL: Done catching up block hashes
+2025-04-06 08:00:15.737 [INF] LNWL: Finished rescan for 0 addresses (synced to block 0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206, height 0)
+2025-04-06 08:00:15.737 [INF] IRPC: Baking macaroons for invoices RPC Server at: /root/.lnd/data/chain/bitcoin/regtest/invoices.macaroon
+2025-04-06 08:00:15.739 [INF] RRPC: Making macaroons for Router RPC Server at: /root/.lnd/data/chain/bitcoin/regtest/router.macaroon
+2025-04-06 08:00:15.739 [INF] NTFR: Baking macaroons for ChainNotifier RPC Server at: /root/.lnd/data/chain/bitcoin/regtest/chainnotifier.macaroon
+2025-04-06 08:00:15.741 [INF] LTND: We're not running within systemd or the service type is not 'notify'
+2025-04-06 08:00:15.742 [INF] LTND: Waiting for chain backend to finish sync, start_height=0
+2025-04-06 08:07:30.624 [INF] LTND: Chain backend is fully synced (end_height=101)!
+2025-04-06 08:07:30.624 [WRN] HLCK: check: disk space configured with 0 attempts, skipping it
+2025-04-06 08:07:30.625 [WRN] HLCK: check: tls configured with 0 attempts, skipping it
+2025-04-06 08:07:30.625 [INF] LNWL: SigPool starting
+2025-04-06 08:07:30.631 [INF] CHNF: ChannelNotifier starting
+2025-04-06 08:07:30.631 [INF] NTFN: New block epoch subscription
+2025-04-06 08:07:30.631 [INF] BTCN: Broadcaster now active
+2025-04-06 08:07:30.631 [INF] PRNF: PeerNotifier starting
+2025-04-06 08:07:30.632 [INF] HSWC: HtlcNotifier starting
+2025-04-06 08:07:30.633 [INF] SWPR: Sweeper starting
+2025-04-06 08:07:30.633 [INF] UTXN: UTXO nursery starting
+2025-04-06 08:07:30.634 [INF] NTFN: New block epoch subscription
+2025-04-06 08:07:30.636 [INF] NTFN: New block epoch subscription
+2025-04-06 08:07:30.636 [INF] BRAR: Breach arbiter starting
+2025-04-06 08:07:30.637 [INF] FNDG: Funding manager starting
+2025-04-06 08:07:30.637 [INF] HSWC: HTLC Switch starting
+2025-04-06 08:07:30.637 [INF] BRAR: Starting contract observer, watching for breaches.
+2025-04-06 08:07:30.638 [INF] NTFN: New block epoch subscription
+2025-04-06 08:07:30.641 [INF] NTFN: New block epoch subscription
+2025-04-06 08:07:30.641 [INF] CNCT: ChainArbitrator starting
+2025-04-06 08:07:30.641 [INF] DISC: Authenticated Gossiper starting
+2025-04-06 08:07:30.641 [INF] NTFN: New block epoch subscription
+2025-04-06 08:07:30.641 [INF] NTFN: New block epoch subscription
+2025-04-06 08:07:30.642 [INF] CRTR: Channel Router starting
+2025-04-06 08:07:30.643 [INF] CRTR: FilteredChainView starting
+2025-04-06 08:07:30.646 [INF] CRTR: Filtering chain using 0 channels active
+2025-04-06 08:07:30.647 [INF] CRTR: Prune tip for Channel Graph: height=101, hash=52f97f99841d87d9cfb56d98d1284627a38a4037b5569551ee51dfbde1e235e2
+2025-04-06 08:07:30.647 [INF] INVC: InvoiceRegistry starting
+2025-04-06 08:07:30.647 [INF] HSWC: Onion processor starting
+2025-04-06 08:07:30.648 [INF] NTFN: New block epoch subscription
+2025-04-06 08:07:30.742 [INF] NTFN: New block epoch subscription
+2025-04-06 08:07:30.743 [INF] NANN: Channel Status Manager starting
+2025-04-06 08:07:30.743 [INF] CHFT: ChannelEventStore starting
+2025-04-06 08:07:30.743 [INF] CHFT: Adding 0 channels to event store
+2025-04-06 08:07:30.743 [INF] CHBU: chanbackup.SubSwapper starting
+2025-04-06 08:07:30.751 [INF] CHBU: Updating backup file at /root/.lnd/data/chain/bitcoin/regtest/channel.backup
+2025-04-06 08:07:30.752 [INF] CHBU: Swapping old multi backup file from /root/.lnd/data/chain/bitcoin/regtest/temp-dont-use.backup to /root/.lnd/data/chain/bitcoin/regtest/channel.backup
+2025-04-06 08:07:30.754 [INF] SRVR: Auto peer bootstrapping is disabled
+2025-04-06 08:07:30.754 [INF] CMGR: Server listening on [::]:9735

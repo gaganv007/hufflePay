@@ -1,0 +1,74 @@
+2025-04-06T08:12:19.118Z info: Simulated connection to LND at localhost:10009
+2025-04-06T08:12:19.120Z info: Simulated connection to LND at localhost:10010
+2025-04-06T08:12:19.120Z info: Simulated connection to LND at localhost:10011
+2025-04-06T08:12:49.451Z info: Created hold invoice for 100 tokens with hash 1aa92df33e4ff58bc2a8a93d96af5258796a07ddd3832fa3b3eb59c67694946a
+2025-04-06T08:12:49.452Z info: Created invoice for 90.545 tokens: lnbcrt90.545invoice_1743927169451_417
+2025-04-06T08:12:49.454Z info: Cancelled hold invoice with hash 1aa92df33e4ff58bc2a8a93d96af5258796a07ddd3832fa3b3eb59c67694946a
+2025-04-06T08:16:46.908Z info: Created hold invoice for 100 tokens with hash a5ef0aa13cd377c90fbee3e81b4a53d370c0edaa7f020d66a71d40104ef25440
+2025-04-06T08:16:46.908Z info: Created invoice for 90.545 tokens: lnbcrt90.545invoice_1743927406908_110
+2025-04-06T08:16:46.913Z info: Cancelled hold invoice with hash a5ef0aa13cd377c90fbee3e81b4a53d370c0edaa7f020d66a71d40104ef25440
+2025-04-06T08:18:07.854Z info: Created hold invoice for 100 tokens with hash 26a21203a2a46a4577328e878e3aa281166f044d33b403f85a0568cc43f5e6c5
+2025-04-06T08:18:07.854Z info: Created invoice for 90.545 tokens: lnbcrt90.545invoice_1743927487854_667
+2025-04-06T08:18:07.856Z info: Cancelled hold invoice with hash 26a21203a2a46a4577328e878e3aa281166f044d33b403f85a0568cc43f5e6c5
+2025-04-06T08:42:40.067Z info: Simulated connection to LND at localhost:10009
+2025-04-06T08:42:40.069Z info: Simulated connection to LND at localhost:10010
+2025-04-06T08:42:40.069Z info: Simulated connection to LND at localhost:10011
+2025-04-06T08:52:42.638Z info: Simulated connection to LND at localhost:10009
+2025-04-06T08:52:42.639Z info: Simulated connection to LND at localhost:10010
+2025-04-06T08:52:42.640Z info: Simulated connection to LND at localhost:10011
+2025-04-06T08:53:48.624Z info: Created hold invoice for 100 tokens with hash 384990b8f7b20eaa5c5fa41225fa7830d0bbac21f62cacf52374fb62a1629547
+2025-04-06T08:53:48.624Z info: Created invoice for 90.545 tokens: lnbcrt90.545invoice_1743929628624_916
+2025-04-06T08:53:48.641Z info: Cancelled hold invoice with hash 384990b8f7b20eaa5c5fa41225fa7830d0bbac21f62cacf52374fb62a1629547
+2025-04-06T09:09:57.550Z info: Simulated connection to LND at localhost:10009
+2025-04-06T09:09:57.551Z info: Simulated connection to LND at localhost:10010
+2025-04-06T09:09:57.551Z info: Simulated connection to LND at localhost:10011
+2025-04-06T09:14:07.226Z info: Simulated connection to LND at localhost:10009
+2025-04-06T09:14:07.228Z info: Simulated connection to LND at localhost:10010
+2025-04-06T09:14:07.228Z info: Simulated connection to LND at localhost:10011
+2025-04-06T09:19:54.718Z info: Simulated connection to LND at localhost:10009
+2025-04-06T09:19:54.719Z info: Simulated connection to LND at localhost:10010
+2025-04-06T09:19:54.719Z info: Simulated connection to LND at localhost:10011
+2025-04-06T09:20:27.936Z info: Simulated connection to LND at localhost:10009
+2025-04-06T09:20:27.937Z info: Simulated connection to LND at localhost:10010
+2025-04-06T09:20:27.937Z info: Simulated connection to LND at localhost:10011
+2025-04-06T09:21:57.560Z info: Simulated connection to LND at localhost:10009
+2025-04-06T09:21:57.560Z info: Simulated connection to LND at localhost:10010
+2025-04-06T09:21:57.560Z info: Simulated connection to LND at localhost:10011
+2025-04-06T09:25:03.100Z info: Simulated connection to LND at localhost:10009
+2025-04-06T09:25:03.101Z info: Simulated connection to LND at localhost:10010
+2025-04-06T09:25:03.101Z info: Simulated connection to LND at localhost:10011
+2025-04-06T09:25:38.041Z info: Simulated connection to LND at localhost:10009
+2025-04-06T09:25:38.042Z info: Simulated connection to LND at localhost:10010
+2025-04-06T09:25:38.042Z info: Simulated connection to LND at localhost:10011
+2025-04-06T09:27:00.424Z info: Simulated connection to LND at localhost:10009
+2025-04-06T09:27:00.424Z info: Simulated connection to LND at localhost:10010
+2025-04-06T09:27:00.424Z info: Simulated connection to LND at localhost:10011
+2025-04-06T09:29:26.461Z info: Simulated connection to LND at localhost:10009
+2025-04-06T09:29:26.462Z info: Simulated connection to LND at localhost:10010
+2025-04-06T09:29:26.462Z info: Simulated connection to LND at localhost:10011
+2025-04-06T09:31:25.530Z info: Simulated connection to LND at localhost:10009
+2025-04-06T09:31:25.532Z info: Simulated connection to LND at localhost:10010
+2025-04-06T09:31:25.532Z info: Simulated connection to LND at localhost:10011
+2025-04-06T09:33:25.489Z info: Simulated connection to LND at localhost:10009
+2025-04-06T09:33:25.490Z info: Simulated connection to LND at localhost:10010
+2025-04-06T09:33:25.490Z info: Simulated connection to LND at localhost:10011
+2025-04-06T09:35:56.859Z info: Simulated connection to LND at localhost:10009
+2025-04-06T09:35:56.860Z info: Simulated connection to LND at localhost:10010
+2025-04-06T09:35:56.861Z info: Simulated connection to LND at localhost:10011
+2025-04-06T09:40:41.220Z info: Simulated connection to LND at localhost:10009
+2025-04-06T09:40:41.222Z info: Simulated connection to LND at localhost:10010
+2025-04-06T09:40:41.222Z info: Simulated connection to LND at localhost:10011
+2025-04-06T09:41:30.372Z info: Created hold invoice for 100 tokens with hash 4bc324c61e0e07d9a01ab581c02a500337a1e4a08461f57abbf637e829641c5c
+2025-04-06T09:41:30.372Z info: Created invoice for 90.545 tokens: lnbcrt90.545invoice_1743932490372_332
+2025-04-06T09:41:30.379Z info: Cancelled hold invoice with hash 4bc324c61e0e07d9a01ab581c02a500337a1e4a08461f57abbf637e829641c5c
+2025-04-06T09:45:21.219Z info: Simulated connection to LND at localhost:10009
+2025-04-06T09:45:21.220Z info: Simulated connection to LND at localhost:10010
+2025-04-06T09:45:21.220Z info: Simulated connection to LND at localhost:10011
+2025-04-06T09:46:05.030Z info: Created hold invoice for 100 tokens with hash b0ce4e135fd89c5f8dab638adedafc8e70514f658f3556ee74b1d265687d51af
+2025-04-06T09:46:05.030Z info: Created invoice for 90.545 tokens: lnbcrt90.545invoice_1743932765030_859
+2025-04-06T09:46:05.037Z info: Paid invoice: lnbcrt90.545invoice_1743932765...
+2025-04-06T09:46:05.037Z info: Settled hold invoice with preimage e2290fb3c616e2847d4fc8ac1d9dba4bf6bc5c69b79a203c476abc1a0ceae8c5
+2025-04-06T09:53:54.860Z info: Created hold invoice for 100 tokens with hash cf6861b7f7e9a5919fe50635a2e207d06e98cc6f44ecba67af90738f5a46fe5a
+2025-04-06T09:53:54.860Z info: Created invoice for 90.545 tokens: lnbcrt90.545invoice_1743933234860_971
+2025-04-06T09:53:54.868Z info: Paid invoice: lnbcrt90.545invoice_1743933234...
+2025-04-06T09:53:54.868Z info: Settled hold invoice with preimage eb0e1e3637439fa43aca5b3344d40353bdc17c31ccbbc132095b8cbe8d4d80c9

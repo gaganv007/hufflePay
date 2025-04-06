@@ -1,0 +1,272 @@
+/* Dashboard specific styles */
+
+.dashboard-title {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  
+  .dashboard-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  @media (max-width: 992px) {
+    .dashboard-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .dashboard-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .dashboard-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    height: 100%;
+  }
+  
+  .dashboard-card-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  /* Currency Converter Card */
+  .dashboard-converter {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .converter-input {
+    margin-bottom: 15px;
+  }
+  
+  .converter-selects {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .converter-select-group {
+    flex: 1;
+  }
+  
+  .converter-label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: var(--dark-gray);
+  }
+  
+  /* Transaction Overview */
+  .transaction-tabs {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .transaction-tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: var(--transition);
+  }
+  
+  .transaction-tab.active {
+    border-bottom-color: var(--info-color);
+    color: var(--info-color);
+    font-weight: 500;
+  }
+  
+  .transaction-summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .transaction-count {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .transaction-total {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--info-color);
+  }
+  
+  .transaction-chart {
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    background-color: var(--light-gray);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+  }
+  
+  .chart-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+  .chart-bar {
+    width: 20px;
+    background-color: var(--info-color);
+    border-radius: 4px 4px 0 0;
+    position: relative;
+  }
+  
+  .chart-bar:hover:after {
+    content: attr(data-value);
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  
+  /* Cashback Rewards */
+  .rewards-summary {
+    margin-bottom: 20px;
+  }
+  
+  .rewards-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .rewards-label {
+    font-size: 14px;
+    color: var(--dark-gray);
+  }
+  
+  .rewards-value {
+    font-weight: 500;
+  }
+  
+  .total-earned {
+    font-weight: 600;
+  }
+  
+  /* Recent Transactions */
+  .recent-transactions {
+    margin-top: 40px;
+  }
+  
+  .transactions-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .transaction-list {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+  }
+  
+  .transaction-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 100px;
+    padding: 15px 20px;
+    background-color: var(--light-gray);
+    font-weight: 500;
+  }
+  
+  .transaction-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 100px;
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--border-color);
+    transition: var(--transition);
+  }
+  
+  .transaction-item:last-child {
+    border-bottom: none;
+  }
+  
+  .transaction-item:hover {
+    background-color: var(--light-gray);
+  }
+  
+  .transaction-date {
+    color: var(--dark-gray);
+  }
+  
+  .transaction-amount {
+    font-weight: 500;
+  }
+  
+  .transaction-status {
+    text-align: center;
+  }
+  
+  .status-completed {
+    color: var(--success-color);
+  }
+  
+  .status-pending {
+    color: var(--info-color);
+  }
+  
+  .status-failed {
+    color: var(--danger-color);
+  }
+  
+  .transaction-action {
+    text-align: right;
+  }
+  
+  .btn-action {
+    background-color: transparent;
+    border: none;
+    color: var(--info-color);
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: var(--transition);
+  }
+  
+  .btn-action:hover {
+    color: var(--secondary-color);
+  }
+  
+  @media (max-width: 768px) {
+    .transaction-header {
+      display: none;
+    }
+    
+    .transaction-item {
+      grid-template-columns: 1fr;
+      gap: 5px;
+    }
+    
+    .transaction-item > div {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .transaction-item > div:before {
+      content: attr(data-label);
+      font-weight: 500;
+    }
+  }

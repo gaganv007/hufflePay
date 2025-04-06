@@ -1,0 +1,237 @@
+/* Exchange page specific styles */
+
+.exchange-container {
+    max-width: 800px;
+    margin: 50px auto;
+  }
+  
+  .exchange-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  
+  .progress-stepper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  
+  .step-item {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .step-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--medium-gray);
+    margin: 0 auto 10px;
+    position: relative;
+  }
+  
+  .step-title {
+    font-size: 14px;
+    color: var(--dark-gray);
+  }
+  
+  .step-item.active .step-circle {
+    background-color: var(--primary-color);
+  }
+  
+  .step-item.active .step-title {
+    color: var(--secondary-color);
+    font-weight: 500;
+  }
+  
+  .step-item.completed .step-circle {
+    background-color: var(--primary-color);
+  }
+  
+  .progress-track {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--medium-gray);
+    z-index: 0;
+  }
+  
+  .progress-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+  }
+  
+  /* Exchange form */
+  .exchange-form-container {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 30px;
+  }
+  
+  .step-heading {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  
+  .form-description {
+    text-align: center;
+    color: var(--dark-gray);
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  .character-count {
+    font-size: 12px;
+    color: var(--dark-gray);
+    text-align: right;
+    margin-top: 5px;
+  }
+  
+  /* Transaction summary */
+  .transaction-summary {
+    margin-bottom: 30px;
+  }
+  
+  .summary-table {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .summary-row:last-child {
+    border-bottom: none;
+    font-weight: 600;
+  }
+  
+  .summary-label {
+    color: var(--dark-gray);
+  }
+  
+  .summary-value {
+    font-weight: 500;
+  }
+  
+  /* Action buttons */
+  .action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  /* Confirmation screen */
+  .confirmation-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+    background-color: var(--success-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .confirmation-icon i {
+    color: white;
+    font-size: 30px;
+  }
+  
+  .confirmation-heading {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .confirmation-message {
+    text-align: center;
+    color: var(--dark-gray);
+    margin-bottom: 30px;
+  }
+  
+  .transaction-id {
+    font-family: monospace;
+    font-weight: 600;
+  }
+  
+  .action-center {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  /* Currency converter */
+  .currency-converter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .converter-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .amount-input {
+    flex: 2;
+  }
+  
+  .currency-select {
+    flex: 3;
+  }
+  
+  .swap-icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--light-gray);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .swap-icon:hover {
+    background-color: var(--primary-color);
+  }
+  
+  .conversion-result {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 0;
+  }
+  
+  .conversion-rate {
+    text-align: center;
+    font-size: 14px;
+    color: var(--dark-gray);
+    margin-bottom: 20px;
+  }
+  
+  .conversion-fees {
+    text-align: center;
+    font-size: 14px;
+    color: var(--dark-gray);
+    margin-bottom: 30px;
+  }

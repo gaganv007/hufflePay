@@ -1,0 +1,31 @@
+{
+  "success": true,
+  "message": "Swap initiated successfully",
+  "data": {
+    "swapId": "swap_1743927487854_871210f8",
+    "sourceInvoice": {
+      "request": "lnbcrt100hold_invoice_1743927487854_468",
+      "id": "26a21203a2a46a4577328e878e3aa281166f044d33b403f85a0568cc43f5e6c5",
+      "description": "HufflePay: Hold payment from Alice (USD)",
+      "tokens": 100,
+      "created_at": "2025-04-06T08:18:07.854Z",
+      "expires_at": "2025-04-06T09:18:07.854Z"
+    },
+    "targetInvoice": {
+      "request": "lnbcrt90.545invoice_1743927487854_667",
+      "id": "invoice_1743927487854_667",
+      "description": "HufflePay: Payment to Bob (EUR)",
+      "tokens": 90.545,
+      "created_at": "2025-04-06T08:18:07.854Z",
+      "expires_at": "2025-04-06T09:18:07.854Z"
+    },
+    "exchangeDetails": {
+      "originalAmount": 100,
+      "convertedAmount": 91,
+      "feeAmount": 0.455,
+      "finalAmount": 90.545,
+      "rate": 0.91,
+      "feePercentage": 0.5
+    }
+  }
+}

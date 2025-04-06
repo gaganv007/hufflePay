@@ -1,0 +1,38 @@
+{
+  "success": true,
+  "data": {
+    "alice": {
+      "identity_pubkey": "mock_pubkey_localhost_10009",
+      "alias": "Node at localhost:10009",
+      "version": "0.17.0-beta",
+      "color": "#3399ff",
+      "num_pending_channels": 0,
+      "num_active_channels": 2,
+      "num_peers": 3,
+      "block_height": 101,
+      "synced_to_chain": true
+    },
+    "bob": {
+      "identity_pubkey": "mock_pubkey_localhost_10010",
+      "alias": "Node at localhost:10010",
+      "version": "0.17.0-beta",
+      "color": "#3399ff",
+      "num_pending_channels": 0,
+      "num_active_channels": 2,
+      "num_peers": 3,
+      "block_height": 101,
+      "synced_to_chain": true
+    },
+    "edge": {
+      "identity_pubkey": "mock_pubkey_localhost_10011",
+      "alias": "Node at localhost:10011",
+      "version": "0.17.0-beta",
+      "color": "#3399ff",
+      "num_pending_channels": 0,
+      "num_active_channels": 2,
+      "num_peers": 3,
+      "block_height": 101,
+      "synced_to_chain": true
+    }
+  }
+}

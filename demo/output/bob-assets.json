@@ -1,0 +1,11 @@
+{
+  "success": true,
+  "data": [
+    {
+      "id": "asset_eur_1743927393671",
+      "name": "EUR",
+      "amount": 10000,
+      "created_at": "2025-04-06T08:16:33.671Z"
+    }
+  ]
+}
