@@ -20,7 +20,7 @@ The project consists of two main parts:
 ## Prerequisites
 
 - Node.js (v16+)
-- npm or yarn
+- npm
 - Docker and Docker Compose (for running the Bitcoin and Lightning nodes)
 
 ## Running the Backend
