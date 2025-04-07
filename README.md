@@ -25,9 +25,9 @@ The project consists of two main parts:
 
 ## Running the Backend
 
-1. Navigate to the backend directory:
+1. Navigate to the app directory:
    ```bash
-   cd hufflepay-backend
+   cd hufflepay
    ```
 
 2. Install dependencies:
