@@ -71,7 +71,7 @@ The project consists of two main parts:
 
 1. Navigate to the frontend directory:
    ```bash
-   cd hufflepay-frontend
+   cd hufflepay/frontend
    ```
 
 2. Install dependencies:
