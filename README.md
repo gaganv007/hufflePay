@@ -116,4 +116,4 @@ For demo purposes, you can use the following account:
 
 - Bitcoin Lightning Network
 - Taproot Assets protocol
-- All contributors
+- All contributors @shwethasaravanan, @KunalVishwaSivakumar, @akshaykumaran705
