@@ -111,9 +111,3 @@ For demo purposes, you can use the following account:
 
 ### Dashboard
 ![Dashboard](screenshot_dashboard.png)
-
-## Acknowledgments
-
-- Bitcoin Lightning Network
-- Taproot Assets protocol
-- All contributors @shwethasaravanan, @KunalVishwaSivakumar, @akshaykumaran705
