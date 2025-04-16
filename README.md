@@ -11,8 +11,8 @@ The project consists of two main parts:
 ## Features
 
 - Cross-currency transfers using Bitcoin Lightning Network
-- Real time currency conversion
-- Low fee transactions
+- Real-time currency conversion
+- Low-fee transactions
 - Educational content about cryptocurrencies and finance
 - User dashboard with transaction history
 - Social feed for sharing financial journeys
