@@ -84,7 +84,7 @@ The project consists of two main parts:
    npm start
    ```
 
-4. The frontend will be available at http://localhost:8080
+4. The frontend will be available at http://localhost:8080 (Can change port if required)
 
 ## Testing the Application
 
